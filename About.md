@@ -1,3 +1,9 @@
+---
+layout: page
+title: "About"
+permalink: /about
+---
+
 # About
 
 I’m a software engineer with a passion for solving complex problems through data analysis and optimization.
