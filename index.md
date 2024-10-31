@@ -27,7 +27,7 @@ _Report on Chicago bikeshare program_
 - Analyzed the differences between member and casual users, and suggested marketing strategies to convert casual users to members
 - Processed 1.12 gigabytes of bikeshare historical data
 
-### [Bellabeat Case Study](/2024/10/25/Bellabeat-Case-Study.html)
+### [Bellabeat Case Study](/2024/10/25/bellabeat-case-study.html)
 
 _python report on historical Fitbit data_
 
