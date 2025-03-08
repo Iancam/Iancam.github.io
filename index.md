@@ -11,9 +11,9 @@ Welcome to my portfolio! I'm Ian Campbell, a full-stack software engineer turned
 ## 🌟 [About Me](/about.html)
 
 - **Location**: Denver, CO (Open to Remote)
-- **Relevant Technical Skills**:
-  - **Languages**: JavaScript (ES5/ES6), Python, SQL, R
-  - **Data Tools**: Pandas, Tableau, Excel, Tidyverse
+- **Relevant Skills**:
+  - **Languages**: Python, SQL, R JavaScript
+  - **Data Tools**: Pandas, scikit, Tableau, Excel, Tidyverse
   - **Version Control**: Git, GitHub
 
 I like the challenge of exploring data to make informed decisions. Feel free to browse through my projects and connect with me!
@@ -29,10 +29,17 @@ _Report on Chicago bikeshare program_
 
 ### [Bellabeat Case Study](/2024/10/25/bellabeat-case-study.html)
 
-_python report on historical Fitbit data_
+_Python report on historical Fitbit data_
 
 - Analyzed Fitbit data to help create a data driven notification strategy based on user's average steps per day, hourly energy expenditure, sedentary minutes, and sleep habits.
 - Tied the strategy to marketing, positioning Bellabeat as a highly personalized and encouraging wellness companion.
+
+### [AB Testing Case Study](/2024/12/04/ABTesting.html)
+
+_r statistical tests to determine efficacy of changing a game element_
+
+- Revised, extended and simplified an A/B testing case study written in python
+- Clarified hypothesis, corrected the use of the wilcox test, filtered noise, and included a chi-squared test for retention rates between game versions.
 
 ### [Midstream](https://www.github.com/Iancam/midstream)
 
@@ -45,15 +52,14 @@ _single cell RNA Seq Pipeline_
 
 _tool for teaching programming_
 
-- Designed an architecture where user code commands are treated as a data stream, enabling the rewind feature.
-- used to teach numerous tutees and classroom students how to think like programmers.
+- Designed an architecture where user code commands are treated as a data stream, enabling a rewind feature.
+- used to teach numerous students how to think like programmers, with an efficient and interesting feedback loop.
 
-### [TopoJoy](https://www.github.com/Iancam/TopoJoyEnd)
+### [Zoom Lesson](https://www.github.com/Iancam/zoonLesson)
 
-_artistic rendition of a topographical map_
+_Tool to track and bill zoom lessons_
 
-- GPU acceleration to handle large images
-- Simple command line interface for downloading data from Mapbox API
+- Integrates with data from the Zoom API to simplify the management of students and outstanding bills, saving hours of manual entry and reducing errors.
 
 ## 📫 Contact Me
 
