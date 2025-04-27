@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Simplfying Redux"
+title: "Simplifying Redux"
 date: 2024-10-22
 author: Ian Campbell
 ---
@@ -13,7 +13,7 @@ Redux is a popular state management library for React, but its implementation ca
 
 In my experience, reducers and their corresponding actions often follow the same logic: setting and updating objects and literals. Most other state manipulations could either be simplified into these two operations, or moved elsewhere in the redux flow. By applying this rule, I simplified my redux implementation significantly.
 
-It also created an opportunity: since these reducers and actions shared the same structure, except their resource name, we could generate them from a list of resource names. This would save loads of code and complexity.
+It also created an opportunity: since these reducers and actions shared the same structure, we could generate them from a list of resource names. This would save loads of code and complexity.
 
 ## Example Usage
 

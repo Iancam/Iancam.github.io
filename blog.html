@@ -1,0 +1,107 @@
+---
+layout: default
+title: Blog
+---
+
+<section class="blog section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Blog Posts</h2>
+      <div class="separator"></div>
+    </div>
+
+    <div class="blog-grid">
+      {% for post in site.posts %}
+      <article class="blog-card">
+        <div class="blog-content">
+          <h3 class="blog-title">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </h3>
+          <div class="blog-meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">
+              <i class="fas fa-calendar-alt"></i>
+              {{ post.date | date: "%B %-d, %Y" }}
+            </time>
+            {% if post.categories %}
+            <span class="blog-categories">
+              <i class="fas fa-folder"></i>
+              {{ post.categories | join: ", " }}
+            </span>
+            {% endif %}
+          </div>
+          {% if post.excerpt %}
+          <div class="blog-excerpt">
+            {{ post.excerpt | strip_html | truncatewords: 50 }}
+          </div>
+          {% endif %}
+          <a href="{{ post.url }}" class="btn btn-primary btn-sm">Read More</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .blog-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+
+  .blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .blog-content {
+    padding: 1.5rem;
+  }
+
+  .blog-title {
+    margin-bottom: 1rem;
+  }
+
+  .blog-title a {
+    color: var(--gray-900);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .blog-title a:hover {
+    color: var(--primary-color);
+  }
+
+  .blog-meta {
+    display: flex;
+    gap: 1rem;
+    color: var(--gray-600);
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+
+  .blog-meta i {
+    margin-right: 0.5rem;
+  }
+
+  .blog-excerpt {
+    color: var(--gray-700);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .blog-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

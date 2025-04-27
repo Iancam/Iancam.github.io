@@ -1,0 +1,86 @@
+# Featured Projects
+projects:
+  - title: "Divvy Case Study"
+    description: "Report on Chicago bikeshare program"
+    url: "/2024/10/18/Divvy-Case-Study.html"
+    highlights:
+      - "Analyzed the differences between member and casual users, and suggested marketing strategies to convert casual users to members"
+      - "Processed 1.12 gigabytes of bikeshare historical data"
+    tags: ["Data Analysis", "Marketing Strategy"]
+    image: "/assets/images/divvy-project.jpg" # Add your actual image path
+
+  - title: "Bellabeat Case Study"
+    description: "Python report on historical Fitbit data"
+    url: "/2024/10/25/bellabeat-case-study.html"
+    highlights:
+      - "Analyzed Fitbit data to help create a data driven notification strategy based on user's average steps per day, hourly energy expenditure, sedentary minutes, and sleep habits"
+      - "Tied the strategy to marketing, positioning Bellabeat as a highly personalized and encouraging wellness companion"
+    tags: ["Python", "Health Analytics"]
+    image: "/assets/images/bellabeat-project.jpg" # Add your actual image path
+
+  - title: "AB Testing Case Study"
+    description: "R statistical tests to determine efficacy of changing a game element"
+    url: "/2024/12/04/AB-Testing.html"
+    highlights:
+      - "Revised, extended and simplified an A/B testing case study written in python"
+      - "Clarified hypothesis, corrected the use of the wilcox test, filtered noise, and included a chi-squared test for retention rates between game versions"
+    tags: ["R", "A/B Testing", "Statistics"]
+    image: "/assets/images/ab-testing-project.jpg" # Add your actual image path
+
+  - title: "Midstream"
+    description: "Single cell RNA Seq Pipeline"
+    url: "https://www.github.com/Iancam/midstream"
+    highlights:
+      - "Converted a repetitive, 90 step process into 3 lines of code, standardizing experiment output and increasing replicability"
+      - "Published paper available on Research Gate"
+    tags: ["Bioinformatics", "RNA Sequencing"]
+    paper_url: "https://www.researchgate.net/publication/360846890_Single_Cell_RNA_Sequencing_and_Binary_Hierarchical_Clustering_Defines_Lung_Interstitial_Macrophage_Heterogeneity_in_Response_to_Hypoxia"
+    image: "/assets/images/midstream-project.jpg" # Add your actual image path
+
+  - title: "Karel Robot"
+    description: "Tool for teaching programming"
+    url: "https://www.github.com/Iancam/karel-robot"
+    highlights:
+      - "Designed an architecture where user code commands are treated as a data stream, enabling a rewind feature"
+      - "Used to teach numerous students how to think like programmers, with an efficient and interesting feedback loop"
+    tags: ["Education", "JavaScript"]
+    image: "/assets/images/karel-project.jpg" # Add your actual image path
+
+  - title: "Zoom Lesson"
+    description: "Tool to track and bill zoom lessons"
+    url: "https://www.github.com/Iancam/zoonLesson"
+    highlights:
+      - "Integrates with data from the Zoom API to simplify the management of students and outstanding bills"
+      - "Saves hours of manual entry and reduces errors"
+    tags: ["API Integration", "Automation"]
+    image: "/assets/images/zoom-project.jpg" # Add your actual image path
+
+# Skills categorized
+skills:
+  languages:
+    - Python
+    - SQL
+    - R
+    - JavaScript
+    - Java
+    - Swift
+  data_tools:
+    - Pandas
+    - scikit-learn
+    - Tableau
+    - Excel
+    - Tidyverse
+  version_control:
+    - Git
+    - GitHub
+  cloud:
+    - EC2
+    - S3
+    - DynamoDB
+    - Google BigQuery
+    - Docker
+  other:
+    - Agile
+    - A/B Testing and experimentation
+    - Data Cleaning with AI
+    - API Integration

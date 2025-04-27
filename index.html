@@ -1,0 +1,236 @@
+---
+layout: default
+title: Home
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <div class="gradient-bg"></div>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text slide-up">
+              <h1>Ian Campbell</h1>
+              <h2>Data Analyst & Software Engineer</h2>
+              <p class="hero-description">
+                Transforming raw data into actionable insights
+              </p>
+              <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+              </div>
+            </div>
+            <div class="hero-image fade-in">
+              <div class="profile-image-container">
+                <!-- Replace with your actual profile image -->
+                <img
+                  src="{{ '/assets/images/profile.jpg' | relative_url }}"
+                  alt="Ian Campbell"
+                  class="profile-image"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about section">
+        <div class="container">
+          <div class="section-header">
+            <h2>About Me</h2>
+            <div class="separator"></div>
+          </div>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                I'm a full-stack software engineer turned data analyst based in
+                Denver, CO (open to remote work). With a strong programming
+                foundation, I leverage my technical expertise to extract
+                meaningful insights from complex datasets.
+              </p>
+              <p>
+                I thrive on the challenge of exploring data to make informed
+                decisions and create impactful solutions. My approach combines
+                analytical rigor with creative problem-solving to deliver
+                results that drive strategic business decisions.
+              </p>
+              <div class="location-tag">
+                <i class="fas fa-map-marker-alt"></i> Denver, CO
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Featured Projects</h2>
+            <div class="separator"></div>
+          </div>
+          <div class="projects-grid">
+            {% for project in site.data.projects.projects %}
+            <div class="project-card">
+              <div class="project-image">
+                {% if project.image %}
+                <img
+                  src="{{ project.image | relative_url }}"
+                  alt="{{ project.title }}"
+                />
+                {% else %}
+                <div class="project-image-placeholder">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                {% endif %}
+              </div>
+              <div class="project-details">
+                <h3 class="project-title">{{ project.title }}</h3>
+                <p class="project-description">{{ project.description }}</p>
+                <ul class="project-highlights">
+                  {% for highlight in project.highlights %}
+                  <li>{{ highlight }}</li>
+                  {% endfor %}
+                </ul>
+                <div class="tags">
+                  {% for tag in project.tags %}
+                  <span class="tag">{{ tag }}</span>
+                  {% endfor %}
+                </div>
+                <div class="project-links">
+                  <a href="{{ project.url }}" class="btn btn-sm"
+                    >View Project</a
+                  >
+                  {% if project.paper_url %}
+                  <a
+                    href="{{ project.paper_url }}"
+                    class="btn btn-sm btn-outline"
+                    >View Paper</a
+                  >
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Skills & Expertise</h2>
+            <div class="separator"></div>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <div class="skill-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Languages</h3>
+              <div class="skill-tags">
+                {% for skill in site.data.projects.skills.languages %}
+                <span class="skill-tag">{{ skill }}</span>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="skill-category">
+              <div class="skill-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3>Data Tools</h3>
+              <div class="skill-tags">
+                {% for skill in site.data.projects.skills.data_tools %}
+                <span class="skill-tag">{{ skill }}</span>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="skill-category">
+              <div class="skill-icon">
+                <i class="fas fa-code-branch"></i>
+              </div>
+              <h3>Version Control</h3>
+              <div class="skill-tags">
+                {% for skill in site.data.projects.skills.version_control %}
+                <span class="skill-tag">{{ skill }}</span>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="skill-category">
+              <div class="skill-icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <h3>Cloud</h3>
+              <div class="skill-tags">
+                {% for skill in site.data.projects.skills.cloud %}
+                <span class="skill-tag">{{ skill }}</span>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="skill-category">
+              <div class="skill-icon">
+                <i class="fas fa-tools"></i>
+              </div>
+              <h3>Other</h3>
+              <div class="skill-tags">
+                {% for skill in site.data.projects.skills.other %}
+                <span class="skill-tag">{{ skill }}</span>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Get In Touch</h2>
+            <div class="separator"></div>
+          </div>
+          <div class="contact-content">
+            <div class="contact-text">
+              <p>
+                I'm always open to discussing new projects, data challenges, or
+                potential collaborations. Feel free to reach out through any of
+                these channels.
+              </p>
+            </div>
+            <div class="contact-links">
+              <a href="mailto:ian.campbell.92@gmail.com" class="contact-link">
+                <i class="fas fa-envelope"></i>
+                <span>ian.campbell.92@gmail.com</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ian-campbell-05692930"
+                class="contact-link"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin"></i>
+                <span>linkedin.com/in/ian-campbell-05692930</span>
+              </a>
+              <a
+                href="https://github.com/Iancam"
+                class="contact-link"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i>
+                <span>github.com/Iancam</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -12,9 +12,11 @@ Welcome to my portfolio! I'm Ian Campbell, a full-stack software engineer turned
 
 - **Location**: Denver, CO (Open to Remote)
 - **Relevant Skills**:
-  - **Languages**: Python, SQL, R JavaScript
+  - **Languages**: Python, SQL, R JavaScript, Java, Swift
   - **Data Tools**: Pandas, scikit, Tableau, Excel, Tidyverse
   - **Version Control**: Git, GitHub
+  - **Cloud**: EC2, S3, DynamoDB, Google BigQuery, Docker
+  - **Other**: Agile, A/B Testing and experimentation, Data Cleaning with AI, API Integration
 
 I like the challenge of exploring data to make informed decisions. Feel free to browse through my projects and connect with me!
 
