@@ -90,7 +90,9 @@ title: Home
                   src="{{ project.image | relative_url }}"
                   alt="{{ project.title }}"
                 />
-                {% else %}
+                {% if project.attribution %}
+                <div class="image-attribution">{{ project.attribution }}</div>
+                {% endif %} {% else %}
                 <div class="project-image-placeholder">
                   <i class="fas fa-chart-line"></i>
                 </div>

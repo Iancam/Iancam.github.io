@@ -8,6 +8,7 @@ projects:
       - "Processed 1.12 gigabytes of bikeshare historical data"
     tags: ["Data Analysis", "Marketing Strategy"]
     image: "/assets/images/divvy-project.jpg" # Add your actual image path
+    attribution: "Photo by @robertbye on unsplash"
 
   - title: "Bellabeat Case Study"
     description: "Python report on historical Fitbit data"
@@ -17,6 +18,7 @@ projects:
       - "Tied the strategy to marketing, positioning Bellabeat as a highly personalized and encouraging wellness companion"
     tags: ["Python", "Health Analytics"]
     image: "/assets/images/bellabeat-project.jpg" # Add your actual image path
+    attribution: "Photo by @jenskreuter on unsplash"
 
   - title: "AB Testing Case Study"
     description: "R statistical tests to determine efficacy of changing a game element"
@@ -26,6 +28,7 @@ projects:
       - "Clarified hypothesis, corrected the use of the wilcox test, filtered noise, and included a chi-squared test for retention rates between game versions"
     tags: ["R", "A/B Testing", "Statistics"]
     image: "/assets/images/ab-testing-project.jpg" # Add your actual image path
+    attribution: "Photo by @jdent on unsplash"
 
   - title: "Midstream"
     description: "Single cell RNA Seq Pipeline"
@@ -36,6 +39,7 @@ projects:
     tags: ["Bioinformatics", "RNA Sequencing"]
     paper_url: "https://www.researchgate.net/publication/360846890_Single_Cell_RNA_Sequencing_and_Binary_Hierarchical_Clustering_Defines_Lung_Interstitial_Macrophage_Heterogeneity_in_Response_to_Hypoxia"
     image: "/assets/images/midstream-project.jpg" # Add your actual image path
+    attribution: "Photo by Ian Campbell"
 
   - title: "Karel Robot"
     description: "Tool for teaching programming"
@@ -45,6 +49,7 @@ projects:
       - "Used to teach numerous students how to think like programmers, with an efficient and interesting feedback loop"
     tags: ["Education", "JavaScript"]
     image: "/assets/images/karel-project.jpg" # Add your actual image path
+    attribution: "Photo by @emilipothese on unsplash"
 
   - title: "Zoom Lesson"
     description: "Tool to track and bill zoom lessons"
@@ -54,6 +59,7 @@ projects:
       - "Saves hours of manual entry and reduces errors"
     tags: ["API Integration", "Automation"]
     image: "/assets/images/zoom-project.jpg" # Add your actual image path
+    attribution: "Photo by @johnishappysometimes on unsplash"
 
 # Skills categorized
 skills:
