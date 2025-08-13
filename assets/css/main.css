@@ -652,6 +652,17 @@ ul {
   color: white;
 }
 
+/* Offset for fixed header so content isn't hidden */
+main.page-content {
+  padding-top: 96px;
+}
+
+@media (max-width: 640px) {
+  main.page-content {
+    padding-top: 112px;
+  }
+}
+
 /* Responsive Styles */
 @media (max-width: 992px) {
   h1 {
